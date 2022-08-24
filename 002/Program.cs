@@ -10,7 +10,6 @@ int Prompt(string message)
     return result;
 }
 
-int a = Prompt("Введите число  ");
 int SumNumbers(int a)
 {
     int sum = 0;
@@ -23,6 +22,6 @@ int SumNumbers(int a)
     }
     return sum;
 }
-
+int a = Prompt("Введите число  ");
 int result = SumNumbers(a);
 Console.WriteLine($"Сумма цифр в числе {result}");
