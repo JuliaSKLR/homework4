@@ -10,10 +10,17 @@ int Prompt(string message)
     return result;
 }
 
-int A = Prompt("Введите число А ");
-int B = Prompt("Введите число B ");
-int result = A;
-for (int i =1; i<B;  i++ ){
-    result = result*A;
+
+int Pow(int a, int b)
+{
+    int pow = 1;
+    for (int i = 0; i <b; i++ )
+    {
+    pow = pow * a;
 }
-System.Console.WriteLine(result);
+return pow;
+}
+int a = Prompt("Введите число А ");
+int b = Prompt("Введите число B ");
+int result = Pow(a,b);
+System.Console.WriteLine($"A в степени В = {result}");
