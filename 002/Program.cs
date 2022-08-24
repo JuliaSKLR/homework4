@@ -11,12 +11,18 @@ int Prompt(string message)
 }
 
 int a = Prompt("Введите число  ");
-int sum = 0;
-while (a > 0)
+int SumNumbers(int a)
 {
+    int sum = 0;
+    while (a > 0)
+    {
 
-    sum = sum + a % 10;
-    a = a / 10;
+        sum = sum + a % 10;
+        a = a / 10;
 
+    }
+    return sum;
 }
-Console.WriteLine(sum);
+
+int result = SumNumbers(a);
+Console.WriteLine($"Сумма цифр в числе {result}");
